@@ -30,6 +30,6 @@ cout << "it grossed in total $" << movie_grossm << " million." << endl;
 
 //print a movie quote
 cout << "QUOTE:" << endl << " \t\"Life was like a box of chocolates; you never know what you're gonna get.\" " << endl;
-
+cout << "My favorite scene from Forrest Gump was when Forrest was fishing for shrimp." << endl;
     return 0; // no errors
 }
