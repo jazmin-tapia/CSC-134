@@ -19,17 +19,17 @@ int movie_year; // year of release
 double movie_grossm; // millions of USD of the gross
 
 // Example: Shrek 
-movie_name = "Shrek";
-movie_year = 2001;
-movie_grossm = 484.4; // about half a billion, internationally
+movie_name = "Forrest Gump ";
+movie_year = 1994;
+movie_grossm = 680; // about half a billion, internationally
 
 //print the movie blurb
 cout << "The movie " << movie_name << "came out in " << movie_year << "." << endl;
 
-cout << "it grossed in total $" << movie_grossm << "million." << endl;
+cout << "it grossed in total $" << movie_grossm << " million." << endl;
 
 //print a movie quote
-cout << "QUOTE:" << endl << " \t\"Ogres are like onions. Onions have layers. Ogres have layers.\" " << endl;
+cout << "QUOTE:" << endl << " \t\"Life was like a box of chocolates; you never know what you're gonna get.\" " << endl;
 
     return 0; // no errors
 }
