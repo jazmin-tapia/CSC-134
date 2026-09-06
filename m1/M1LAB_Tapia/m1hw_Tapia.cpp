@@ -3,7 +3,7 @@
 M1HW - Movie Talk
 Tapia, J
 8/31
-Example: Talk about Shrek
+Example: Talk about Forrest Gump
 */
 
 #include <iostream>
