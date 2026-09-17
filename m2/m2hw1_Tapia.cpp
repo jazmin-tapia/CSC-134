@@ -30,12 +30,22 @@ HOW TO USE:
 
         void question1() {
             cout << "Question 1 goes here" << endl;
-            cout << "What is your  name? ";
             string name;
-            cin >> name;
-            cout << "What is the starting account balance? ";
             double start_account_balance;
+            double amount_of_deposit;
+            double amount_of_withdrawal;
+
+            cout << "Enter full name: ";
+            cin >> name;
+            cout << "Enter starting account balance: ";
             cin >> start_account_balance;
+            cout << "Enter deposit amount: ";
+             cin >>  amount_of_deposit; 
+            cout << "Enter withdrawal amount: ";
+            cin >> amount_of_withdrawal;
+
+        
+
 
 
 
