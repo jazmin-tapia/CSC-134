@@ -37,12 +37,18 @@ HOW TO USE:
 
             cout << "Enter full name: ";
             cin >> name;
-            cout << "Enter starting account balance: ";
+            cout << "Enter starting account balance: $";
             cin >> start_account_balance;
-            cout << "Enter deposit amount: ";
-             cin >>  amount_of_deposit; 
-            cout << "Enter withdrawal amount: ";
+            cout << "Enter deposit amount: $";
+            cin >> amount_of_deposit;
+            cout << "Enter withdrawal amount: $"; 
             cin >> amount_of_withdrawal;
+
+            cout << "BANKING INFO: ";
+            cout << "User" << name; 
+            cout << "Account Number 322348";
+            cout << "Account Balance: " << 
+
 
         
 
