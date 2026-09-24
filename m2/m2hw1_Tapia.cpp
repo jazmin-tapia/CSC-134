@@ -34,6 +34,9 @@ HOW TO USE:
             double start_account_balance;
             double amount_of_deposit;
             double amount_of_withdrawal;
+            double account_balance;
+            account_balance = start_account_balance + amount_of_deposit;
+            account_balance = start_account_balance - amount_of_withdrawal;
 
             cout << "Enter full name: ";
             cin >> name;
@@ -47,7 +50,8 @@ HOW TO USE:
             cout << "BANKING INFO: ";
             cout << "User" << name; 
             cout << "Account Number 322348";
-            cout << "Account Balance: " << 
+            cout << "Account Balance: " << account_balance;
+            
 
 
         
