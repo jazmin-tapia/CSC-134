@@ -20,8 +20,9 @@ using namespace std;
 // we should give them "verb" names, like we give our 
 // variables "noun" names. 
 
-void chooseDoor1();
-void chooseDoor2();
+void chooseweartiara();
+void choosedontweartiara();
+void choosefedorarebellion();
 
 // the lines above tell the program that these functions will 
 // exist, but we have to define them later on in the file.
@@ -37,24 +38,30 @@ int main() {
   int choice; 
 
   // ask the question
-  cout << "Do you choose Door 1 or Door 2?" << endl;
-  cout << "1. Choose Door #1" << endl;
-  cout << "2. Choose Door #2" << endl;
+  cout << "You are getting ready for a pageant!\n";
+  cout << "Do you wear your tiara with your dress?" << endl;
+  cout << "1. Wear your tiara" << endl;
+  cout << "2. Do not wear your tiara" << endl;
+  cout << "3. Be different, throw on a fedora" << endl;
+
   cout << "? ";
   cin >> choice;
 
   if (1 == choice) {
-    chooseDoor1();
+    chooseweartiara();
   }
   else if (2 == choice) {
-    chooseDoor2();
+    choosedontweartiara();
+  }
+  else if (3 == choice) {
+    choosefedorarebellion();
   }
   else {
     cout << "I'm sorry, that is not a valid choice." << endl;
     //program ends or we could loop around again
   }
 
-  cout << "Thank you for playing!" << endl;
+  cout << "Thank you for entering in the pageant!" << endl;
   return 0; // tells the computer that we finished without errors
 
 } // end of the main() method
@@ -65,20 +72,24 @@ int main() {
 // (Defining means "This is what the function does".)
 ////
 
-void chooseDoor1() {
+
+
+
+void chooseweartiara() {
   // this function is called in main if the user chooses 1.
-  cout << "You chose Door 1" << endl;
-  cout << "You win ... A NEW CAR!" << endl;
-  cout << "1. hop in the whip n drive" << endl;
-  cout << "2. Donate the car bc its trash" << endl; 
-  
+  cout << "You chose to wear your tiara!" << endl;
+  cout << "You win the pageant!! You get a 10 minute standing ovation and go on to win Miss Universe! Congratulations!" << endl;
 }
 
-void chooseDoor2() {
+void choosedontweartiara() {
   // this function is called in main if the user chooses 1.
-  cout << "You chose Door 2" << endl;
-  cout << "You win ... a bottle of floor wax." << endl;
+  cout << "You chose to not wear your tiara!" << endl;
+  cout << "You lose the pageant.. you get bood out of the venue, and you immgrate to ireland and start a new life because everyone hated you in the pageant. You are too embarrased to show your face here again." << endl;
 }
 
+void choosefedorarebellion() {
+    cout << "You chose go against the grain and wear a fedora!" << endl;
+    cout << "They kick you out of the pageant, fedoras are against the rules!" << endl;
+}
 // If we had a Door #3, or 4, we would add another else if to our
 // main(), and then declare and define chooseDoor3() and so on.
