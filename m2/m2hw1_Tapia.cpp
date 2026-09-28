@@ -35,22 +35,31 @@ HOW TO USE:
             double amount_of_deposit;
             double amount_of_withdrawal;
             double account_balance;
-            account_balance = start_account_balance + amount_of_deposit;
-            account_balance = start_account_balance - amount_of_withdrawal;
+            int acc_num = 2838424;
 
             cout << "Enter full name: ";
             cin >> name;
+
             cout << "Enter starting account balance: $";
             cin >> start_account_balance;
+
             cout << "Enter deposit amount: $";
             cin >> amount_of_deposit;
+
             cout << "Enter withdrawal amount: $"; 
             cin >> amount_of_withdrawal;
 
-            cout << "BANKING INFO: ";
-            cout << "User" << name; 
-            cout << "Account Number 322348";
-            cout << "Account Balance: " << account_balance;
+            account_balance = start_account_balance + amount_of_deposit - amount_of_withdrawal;
+
+
+           // cout << "BANKING INFO: " << endl;
+  
+}
+          //  cout << "User: " << name << endl; 
+
+            // cout
+            // cout << acc_num << endl;
+            //  cout << "Account Balance: " << account_balance << endl; 
             
 
 
