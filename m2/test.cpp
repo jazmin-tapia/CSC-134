@@ -11,7 +11,6 @@ HOW TO USE:
     #include <iostream>
     #include <iomanip>
     using namespace std;
-    
 
     //covered in module 5, heres the basics
     // list extra functions above main 
@@ -23,9 +22,9 @@ HOW TO USE:
 
     int main() {
         // Run only the questions you finish by removing the //
-       // question1();
-       // question2();
-        question3();
+        question1();
+        //question2();
+        //question3();
         //question4();
     }
 
@@ -117,8 +116,7 @@ HOW TO USE:
 
         void question3() {
             cout << "Question 3 goes here" << endl;
-            cout << "How many pizzas do you want to order?" << endl;
-            cout << "Enter number of pizzas: ";
+
         }
 
         void question4() {
@@ -127,3 +125,4 @@ HOW TO USE:
         }
 
     
+        
