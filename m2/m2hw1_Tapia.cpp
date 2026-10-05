@@ -118,6 +118,7 @@ void question3() {
     cin >> slices_per_pizza;
     cout << "How many people? " << endl;
     cin >> totalppl;
+    
 
     
 }
