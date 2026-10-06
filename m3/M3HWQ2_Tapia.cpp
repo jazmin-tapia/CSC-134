@@ -1,9 +1,9 @@
 // CSC 134
 // M3HW1
 // Jazmin Tapia
-//10/5/26
+//10/6/26
 
-//question 1
+//question 2
 #include <iostream>
 #include <iomanip>
 using namespace std;
@@ -12,27 +12,6 @@ void dinein ();
 void takeaway ();
 
 int main () {
-    string line = "--------------------------------------------------------------------------";
-    string doilike;
-
-    cout << "Question 1" << endl;
-    cout << "Hello, I'm a c++ program!" << endl;
-    cout << "Do you like me? please type yes or no." << endl;
-    cin >> doilike;
-    if (doilike == "yes") {
-        cout << "Thats great! I'm sure we'll get along." << endl;
-    }
-    else if (doilike == "no") {
-        cout << "Well, maybe you'll learn to like me later." << endl;
-    }
-     else {
-        cout << "If you're not sure… that's OK." << endl;
-
-
-        
-    }
-
-    cout << line << endl;
     cout << "Question 2" << endl;
     int choice;
 
@@ -50,15 +29,7 @@ int main () {
     //program ends or we could loop around again
   }
     cout << "Thank you, come again!" << endl << endl;
-    
-    cout << line << endl;
-    cout << "Question 3" << endl; 
-    cout << ""
-
 }
-
-
-
 void dinein () {
     string meal_name;    //ex: chicken sandwich 
     double meal_price;   //$
@@ -80,7 +51,7 @@ void dinein () {
     tax_amount = meal_price * tax_rate;
     tip_amount = meal_price * tip_rate;
     total1 = meal_price + tax_amount;
-    total2 = meal_price + tax_amount + tip_rate;
+    total2 = meal_price + tax_amount + tip_amount;
 
     string line = "--------------------------------------------------------------------------";
     cout << line << endl;
@@ -91,7 +62,6 @@ void dinein () {
     cout << line << endl;
     cout << setw(20) << "Total: " << setw(10) << total2 << endl;
 }
-
 void takeaway() {
 string meal_name;    //ex: chicken sandwich 
     double meal_price;   //$
@@ -112,7 +82,7 @@ meal_name = "Meal"; // pick my own if i want
     tax_amount = meal_price * tax_rate;
     tip_amount = meal_price * tip_rate;
     total1 = meal_price + tax_amount;
-    total2 = meal_price + tax_amount + tip_rate;
+    total2 = meal_price + tax_amount + tip_amount;
 
     string line = "--------------------------------------------------------------------------";
     cout << line << endl;
@@ -121,9 +91,4 @@ meal_name = "Meal"; // pick my own if i want
     cout << setw(20) << "  Tax: " << setw(10) << tax_amount << endl;
     cout << line << endl;
     cout << setw(20) << "Total: " << setw(10) << total1 << endl;
-   
-
 }
-
-
- 
