@@ -1,6 +1,7 @@
 /*
 CSC 134
 M2HW1 - HW (4 questions max)
+Gold
 Tapia
 9/16/26
 HOW TO USE: 
@@ -23,9 +24,9 @@ void question4();
 
 int main() {
     // Run only the questions you finish by removing the //
-  // question1();
-   // question2();
-   // question3();
+  question1();
+   question2();
+    question3();
     question4();
 }
 
@@ -119,8 +120,14 @@ void question3() {
     cout << "How many people? " << endl;
     cin >> totalppl;
     
-
+    total_slices = pizza_amt * slices_per_pizza;
+    slices_eaten = totalppl * 3;
+    leftovers = total_slices - slices_eaten;
     
+cout << setprecision(0) << fixed;
+cout << "With a total of " << total_slices << "pizza slices and " << totalppl << "visitors, " << endl;
+cout << "There will be " << leftovers << "leftover pizza slices after the party." << endl;
+ 
 }
 
 void question4() {
