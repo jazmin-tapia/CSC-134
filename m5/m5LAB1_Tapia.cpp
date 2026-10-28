@@ -1,25 +1,25 @@
-
+#include <iostream>
+#include <limits>
+using namespace std;
 /*
 CSC 134
 M5LAB1 - Choose Your Own Adventure
 Jazmin Tapia
-10/26
-
+10/28/26
+This template is a starting point for your own program.
+We use void functions to tell a simple story.
+The player makes choices, and each choice calls a function.
 */
 // FUNCTION PROTOTYPES
 // Every function you write must be listed here, above main().
 // The compiler reads the file from top to bottom. A prototype
 // tells it: "this function exists, and its full code is below."
-
-#include <iostream>
-#include <limits>
-using namespace std;
-
-
 void main_menu();
 void choice_front_door();
 void choice_back_door();
 void choice_go_home();
+void choice_almostwin();
+void choice_WIN();
 
 // TODO: add your new prototypes here
 int main() {
@@ -35,11 +35,11 @@ return 0; // finished with no errors
 void main_menu() {
 // A menu that accepts 1, 2, 3, or 4 (quit).
 cout << "Main Menu" << endl;
-cout << "Minecraft zombies are chasing you into a spooky cave, but you have a sneaking suspicion Herobrine is in there..." << endl;
+cout << "You're in front of a spooky old house..." << endl;
 cout << "Do you:" << endl;
-cout << "1. Fight the zombies off with your diamond sword" << endl;
-cout << "2. Run into the spooky cave" << endl;
-cout << "3. Place TNT everywhere, set it off with flint and steel and call it a day" << endl;
+cout << "1. Try the front door" << endl;
+cout << "2. Sneak around back" << endl;
+cout << "3. Forget it, and go home" << endl;
 cout << "4. [Quit]" << endl;
 cout << "Choose: ";
 int choice = 0;
@@ -54,9 +54,9 @@ cin.ignore(numeric_limits<streamsize>::max(), '\n');
 if (1 == choice) {
 choice_front_door();
 } else if (2 == choice) {
-// call choice 2 here
+choice_back_door();
 } else if (3 == choice) {
-// call choice 3 here
+choice_go_home();
 } else if (4 == choice) {
 cout << "Ok, quitting game" << endl;
 return; // go back to main()
@@ -78,14 +78,50 @@ if (1 == choice) {
 choice_back_door();
 } else if (2 == choice) {
 choice_go_home();
+} else {
+cout << "That's not a valid choice, please try again." << endl;
+main_menu(); 
 }
 }
 void choice_back_door() {
-cout << "TODO: Write something here" << endl;
+cout << "Try the back door." << endl;
+cout << "You have two choices." << endl;
+cout << "Do you:" << endl;
+cout << "1. almost win" << endl;
+cout << "2. Give up and go home" << endl;
+int choice = 0;
+cout << "Choose: ";
+cin >> choice;
+if (1 == choice) {
+    choice_almostwin();
+} else if (2 == choice) {
+    choice_go_home();
+} else {
+    cout << "That's not a valid choice, please try again." << endl;
+    main_menu();
+}
+
 }
 void choice_go_home() {
-cout << "TODO: Write something here" << endl;
+cout << "Go home" << endl;
+cout << "LOSING ENDING." << endl;
+cout << "Want to try again?" << endl;
+cout << "1. Yes" << endl;
+cout << "2. Yes again. you do want to try again." << endl;
+
+
+}
+void choice_almostwin() {
+cout << "Almost win" << endl;
+cout << "Do you:" << endl;
+cout << "1. WIN" << endl;
+cout << "2. Give up and go home" << endl;
+
+
+}
+void choice_WIN() {
+cout << "WIN" << endl;
+cout << "WINNING ENDING." << endl;
+
 }
 // TODO: add your new function definitions here
-
-
