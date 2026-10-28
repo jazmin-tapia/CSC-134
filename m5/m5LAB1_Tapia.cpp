@@ -34,6 +34,7 @@ return 0; // finished with no errors
 // The full code for each function goes here, below main().
 void main_menu() {
 // A menu that accepts 1, 2, 3, or 4 (quit).
+cout << "----------------------------------------------------------------------------" << endl;
 cout << "Main Menu" << endl;
 cout << "You're in front of a spooky old house..." << endl;
 cout << "Do you:" << endl;
@@ -66,6 +67,7 @@ main_menu(); // try again
 }
 }
 void choice_front_door() {
+cout << "----------------------------------------------------------------------------" << endl;
 cout << "Try the front door." << endl;
 cout << "It's locked." << endl;
 cout << "Do you:" << endl;
@@ -84,6 +86,7 @@ main_menu();
 }
 }
 void choice_back_door() {
+cout << "----------------------------------------------------------------------------" << endl;
 cout << "Try the back door." << endl;
 cout << "You have two choices." << endl;
 cout << "Do you:" << endl;
@@ -98,30 +101,49 @@ if (1 == choice) {
     choice_go_home();
 } else {
     cout << "That's not a valid choice, please try again." << endl;
-    main_menu();
+    ????????????????????????????
 }
-
 }
 void choice_go_home() {
+cout << "----------------------------------------------------------------------------" << endl;
 cout << "Go home" << endl;
 cout << "LOSING ENDING." << endl;
 cout << "Want to try again?" << endl;
 cout << "1. Yes" << endl;
-cout << "2. Yes again. you do want to try again." << endl;
-
-
+cout << "2. Yes, but the second option. you do want to try again." << endl;
+int choice = 0;
+cin >> choice;
+if (1 == choice) {
+    main_menu();
+} else if (2 == choice) {
+    main_menu();
+} else {
+    cout << "That's not a valid choice, please try again." << endl;
+    main_menu();
+}
 }
 void choice_almostwin() {
+cout << "----------------------------------------------------------------------------" << endl;
 cout << "Almost win" << endl;
 cout << "Do you:" << endl;
 cout << "1. WIN" << endl;
 cout << "2. Give up and go home" << endl;
-
-
+int choice = 0;
+cout << "Choose: " << endl;
+cin >> choice;
+if (1 == choice) {
+    choice_WIN();
+} else if (2 == choice) {
+    choice_go_home();
+} else {
+    cout << "That's not a vaid choice, please try again." << endl;
+    main_menu();
+}
 }
 void choice_WIN() {
+cout << "----------------------------------------------------------------------------" << endl;
 cout << "WIN" << endl;
-cout << "WINNING ENDING." << endl;
+cout << "WINNING ENDING. YAY." << endl;
 
 }
 // TODO: add your new function definitions here
