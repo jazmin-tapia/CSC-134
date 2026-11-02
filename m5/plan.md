@@ -64,24 +64,68 @@ Create a function for the winning ending and display a success message.
   - Display the player returning home.
 - New cave, TNT, and ending functions should be added as prototypes before `main()` and defined below it.
 -------------------------
-front door
-- back door
-- go home
 
-back door
--almost WIN (new)
-- go home 
+first thingy - You teleported as Steve in Minecraft. You are being chased into a dark cave, and you are worried that Herobrine is hiding inside to ambush you. Do you:
+- front door ~~ Take the risk, head right into the cave to possibly find shelter from the zombies chasing you.
+- check back (back) ~~ Fearlessly fight the zombies off with your trusty diamond sword.  
 
-almost WIN (new)
-- win
-- go home
 
-go home 
+front door - You chose to run into the cave to find shelter from the zombies on your trail.
+Herobrine is in the cave, waiting to get you! You must retreat from the cave at once!
+Do you:
+- back door ~~ Fearlessly fight the zombies off with your trusty diamond sword.  
+- go home ~~ Use TNT and flint and steel to get rid of the zombies and Herobrine.
 
-WIN
 
-front door - sword
-back door- go into cave
+back door - You chose to use your trusty diamond sword to fight off the zombies, away from the spooky cave.
+They're overpowering you, there's too many zombies! 
+Do you:
+-almost WIN ~~ Quickly tame an army of 100 wolves with bones so they can fight the zombies for you.
+- go home ~~ Use TNT and flint and steel to get rid of all of the zombies.
+
+
+almost WIN - You chose to tame an army of 100 wolves to fight off those pesky zombies for you.
+The wolves fight off most of the zombies, but there are a few remaining zombies left that are coming for you!
+Do you:
+- win ~~ Finish the zombies off with your trusty diamond sword.
+- go home ~~ Use TNT and flint and steel to get rid of all of the zombies.
+
+
+go home ~~ You chose to use TNT and flint and steel to get rid of all of the zombies.
+You accidentally blew yourself up because you were right next to the TNT...
+You LOST!
+Would you like to respawn?
+
+WIN ~~ You chose to finish the zombies off with your favorite diamond sword.
+You successfully got rid of the zombies that were chasing you!!
+You run away safely far far away from the cave that Herobrine was living in, and go on to live a cozy safe minecraft life.
+You WON!
+
+
+
+
+
+
+You are being chased by Minecraft zombies toward a spooky cave. Herobrine may be hiding inside.
+
+You teleported as Steve in Minecraft. You are being chased into a dark cave, and you are worried that Herobrine is hiding inside to ambush you. Do you:
+
+
+
+
+
+
+front door--- Take the risk, head right into the cave to possibly find shelter from the zombies chasing you.
+back door--- Fearlessly fight the zombies off with your trusty dimaond sword.  
+
+go home--- Use TNT and flint and steel to get rid of the zombies and Herobrine.
+almost win--- Quickly tame an army of 100 wolves with bones so they can fight the zombies for you.
+win --- Finish them off with your trusty diamond sword.
+
+
+
+front door -  go to cave
+back door- diamond sword
 go home - TNT
 almost win- tame wolves
 WIN - attack (with your army of wolves)

@@ -15,11 +15,11 @@ The player makes choices, and each choice calls a function.
 // The compiler reads the file from top to bottom. A prototype
 // tells it: "this function exists, and its full code is below."
 void main_menu();
-void choice_front_door();
-void choice_back_door();
-void choice_go_home();
-void choice_almostwin();
-void choice_WIN();
+void choice_gotocave();
+void choice_diamondsword();
+void choice_TNT();
+void choice_tamewolves();
+void choice_attack_w_wolves();
 
 // TODO: add your new prototypes here
 int main() {
@@ -36,7 +36,7 @@ void main_menu() {
 // A menu that accepts 1, 2, 3, or 4 (quit).
 cout << "----------------------------------------------------------------------------" << endl;
 cout << "Main Menu" << endl;
-cout << "You're in front of a spooky old house..." << endl;
+cout << "!!!!!!!!!!!" << endl;
 cout << "Do you:" << endl;
 cout << "1. Try the front door" << endl;
 cout << "2. Sneak around back" << endl;
@@ -53,11 +53,11 @@ choice = 0; // treat it as an invalid choice
 // Throw away the rest of the line the player typed.
 cin.ignore(numeric_limits<streamsize>::max(), '\n');
 if (1 == choice) {
-choice_front_door();
+choice_gotocave();
 } else if (2 == choice) {
-choice_back_door();
+choice_diamondsword();
 } else if (3 == choice) {
-choice_go_home();
+choice_TNT();
 } else if (4 == choice) {
 cout << "Ok, quitting game" << endl;
 return; // go back to main()
@@ -66,7 +66,7 @@ cout << "That's not a valid choice, please try again." << endl;
 main_menu(); // try again
 }
 }
-void choice_front_door() {
+void choice_gotocave() {
 cout << "----------------------------------------------------------------------------" << endl;
 cout << "Try the front door." << endl;
 cout << "It's locked." << endl;
@@ -77,15 +77,15 @@ int choice = 0;
 cout << "Choose: ";
 cin >> choice;
 if (1 == choice) {
-choice_back_door();
+choice_diamondsword();
 } else if (2 == choice) {
-choice_go_home();
+choice_TNT();
 } else {
 cout << "That's not a valid choice, please try again." << endl;
 main_menu(); 
 }
 }
-void choice_back_door() {
+void choice_diamondsword() {
 cout << "----------------------------------------------------------------------------" << endl;
 cout << "Try the back door." << endl;
 cout << "You have two choices." << endl;
@@ -96,15 +96,15 @@ int choice = 0;
 cout << "Choose: ";
 cin >> choice;
 if (1 == choice) {
-    choice_almostwin();
+    choice_tamewolves();
 } else if (2 == choice) {
-    choice_go_home();
+    choice_TNT();
 } else {
     cout << "That's not a valid choice, please try again." << endl;
     main_menu();
 }
 }
-void choice_go_home() {
+void choice_TNT() {
 cout << "----------------------------------------------------------------------------" << endl;
 cout << "Go home" << endl;
 cout << "LOSING ENDING." << endl;
@@ -122,7 +122,7 @@ if (1 == choice) {
     main_menu();
 }
 }
-void choice_almostwin() {
+void choice_tamewolves() {
 cout << "----------------------------------------------------------------------------" << endl;
 cout << "Almost win" << endl;
 cout << "Do you:" << endl;
@@ -132,15 +132,15 @@ int choice = 0;
 cout << "Choose: " << endl;
 cin >> choice;
 if (1 == choice) {
-    choice_WIN();
+    choice_attack_w_wolves();
 } else if (2 == choice) {
-    choice_go_home();
+    choice_TNT();
 } else {
     cout << "That's not a vaid choice, please try again." << endl;
     main_menu();
 }
 }
-void choice_WIN() {
+void choice_attack_w_wolves() {
 cout << "----------------------------------------------------------------------------" << endl;
 cout << "WIN" << endl;
 cout << "WINNING ENDING. YAY." << endl;
