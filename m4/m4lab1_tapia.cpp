@@ -26,7 +26,7 @@ int main() {
   if (height <=0) {
     cout <<  "Width cant be zero or negative." << endl;
      } 
- }
+ } 
 
 
 cout << "Part 1" << endl;

@@ -14,7 +14,7 @@ void question4();
 void question5();
 
 int main() {
-question2();
+question4();
 }
 
 void question1() {
@@ -58,13 +58,70 @@ cin >> length;
 cout << "Enter height of your block: ";
 cin >> height;
 if (width <=0) {
-    cout << "Width cant be zero or negative." << endl;
+    cout << "Width can't be zero or negative." << endl;
+    question2();
      }
-  if (height <=0) {
-    cout <<  "Width cant be zero or negative." << endl;
+if (height <=0) {
+    cout <<  "Height can't be zero or negative." << endl;
+    question2();
      } 
+if (length <=0) {
+    cout << "Length can't be zero or negative." << endl;
+    question2();
+    }  else  {
 volume = width * length * height;
 cout << "The volume of your block is " << volume << "." << endl;
+  }
+}
+
+void question3 () {
+  int enterednumber;
+  string romannumeral;
+  cout << "Question 3" << endl;
+  cout << "Enter a number (1 - 10): ";
+  cin >> enterednumber;
+  if (enterednumber == 1) {
+    romannumeral = "I";
+  } else if (enterednumber == 2) {
+    romannumeral = "II";
+  } else if (enterednumber == 3) {
+    romannumeral = "III";
+  } else if (enterednumber == 4) {
+    romannumeral = "IV";
+  } else if (enterednumber == 5) {
+    romannumeral = "V";
+  }  else if (enterednumber == 6) {
+    romannumeral = "VI";
+  } else if (enterednumber == 7) {
+    romannumeral = "VII";
+  } else if (enterednumber == 8) {
+    romannumeral = "VIII";
+  } else if (enterednumber == 9) {
+    romannumeral = "IX";
+  } else if (enterednumber == 10) {
+    romannumeral = "X";
+  } else {
+    cout << "Invalid choice, please try again." << endl;
+    question3();
+  }
+  cout << "The Roman numeral version of " << enterednumber << " is " << romannumeral << "." << endl;
+}
+
+void question4 () {
+int urchoice;
+  cout << "Question 4" << endl;
+  cout << "Geometry calculator" << endl;
+  cout << "[1.] Calculate the area of a Circle" << endl;
+  cout << "[2.] Calculate the area of a Rectangle" << endl;
+  cout << "[3.] Calculate the area of a Triangle" << endl;
+  cout << "[4.] Quit" << endl;
+  cout << "Enter your choice (1-4): ";
+  cin >> urchoice;
+  if (urchoice == 1) {
+    
+  }
+
+
 
 
 }
