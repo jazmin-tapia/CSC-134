@@ -2,6 +2,7 @@
 //Jazmin Tapia
 //CSC 134
 // 11/4
+//Gold
 
 #include <iostream>
 #include <limits>
@@ -12,7 +13,6 @@ void question2();
 void question3();
 void question4();
 void question5();
-void error();
 
 int main() {
 int choose = 0;
